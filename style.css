@@ -5,8 +5,11 @@
 
 .container {
   display: grid;
-  background-image: url(img/pattern.png);
+  background-image: url(img/texture-1893783_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   max-width: 100%;
+  min-height: 500px;
   position: relative;
   margin: auto;
   /* grid-gap: 10px; */
@@ -45,7 +48,7 @@ nav {
 }
 
 .content {
-  background-color: white;
+  background-color: #d8d9e3;
   grid-area: content;
 }
 
@@ -74,9 +77,10 @@ ul {
 
 a li {
   display: inline;
-  transition: 0.5s;
+  transition: 0.4s;
   margin: -2px;
   padding: 16px 16px;
+  color: white;
 }
 
 a li:hover {
@@ -86,16 +90,12 @@ a li:hover {
 
 ul a:link {
   text-decoration: none;
-  /* font-weight: 600; */
+  font-weight: 600;
 }
 
-article a h3 {
+article h3 {
   margin-bottom: 15px;
   color: darkcyan;
-}
-
-article a:link {
-  text-decoration: none;
 }
 
 article {
@@ -103,7 +103,23 @@ article {
   border-bottom: 1px solid grey;
 }
 
+article p {
+  margin: 15px;
+  text-align: justify;
+}
+
 article:last-child {
   padding: 20px;
   border-bottom: none;
+}
+
+.gambar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+}
+
+.item {
+  margin-top: 10px;
 }
