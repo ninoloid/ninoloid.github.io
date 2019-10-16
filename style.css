@@ -51,6 +51,7 @@ nav {
 .content {
   background-color: #d8d9e3;
   grid-area: content;
+  width: 100%;
 }
 
 footer {
