@@ -43,7 +43,8 @@ nav {
   grid-area: featured;
   line-height: 100px;
   font-size: 1.25em;
-  color: #32384a;
+  /* color: #32384a; */
+  color: #d5d7e6;
 
 }
 
