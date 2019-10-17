@@ -1,87 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Ahmad Muhammad</title>
-  <link rel="stylesheet" type="text/css" href="style.css" />
-  <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Viga&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/bootstrap-4.3.1.min.css">
+  <link rel="stylesheet" href="css/style.css" class="css">
+
+  <!-- JS -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.bundle-4.3.1.min.js"></script>
+  <script src="js/fontawesome.js"></script>
+
+  <title>Ahmad's Personal Github Web</title>
 </head>
 
 <body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <a class="navbar-brand" href="#">Ahmad Muhammad Satria Adiputra</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto">
+        <a class="nav-item nav-link" href="index.html">Home</a>
+        <a class="nav-item nav-link" href="gallery.html">Gallery</a>
+        <a class="nav-item btn btn-primary tombol" href="https://hacktiv8.com/fullstack/apply/" target="_blank">Join
+          Us</a>
+      </div>
+    </div>
+  </nav>
+  <!-- END OF NAVBAR -->
+
+
+  <!-- JUMBOTRON -->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">
+        <!-- Every beginner possesses a<br><span>great potential</span> to be an <span>expert</span> -->
+        <blockquote>
+          "Every beginner possesses a great potential to be an expert." ― Lailah Gifty Akita
+        </blockquote>
+      </h1>
+    </div>
+  </div>
+  <!-- END OF JUMBOTRON -->
+
+
+  <!-- CONTENT -->
   <div class="container">
-    <nav>
-      <a href="https://hacktiv8.com/"><img id="logo" src="img/hacktiv8.webp" /></a>
-      <ul>
-        <a href="#">
-          <li>Home</li>
-        </a>
-        <a href="#">
-          <li>About</li>
-        </a>
-        <a href="#">
-          <li>Contact</li>
-        </a>
-      </ul>
-    </nav>
-    <section class="featured">
-      <h1>Every beginner possesses a GREAT POTENTIAL to be an EXPERT</h1>
-    </section>
-    <section class="content">
-      <div id="article-list">
-        <article>
-          <h3>HACKTIV8 PHASE 0 WEEK 1</h3>
+
+    <!-- panel -->
+    <div class="row justify-content-center">
+      <div class="col-6 panel">
+        <div class="row justify-content-center">
+          <div class="col-lg">
+            <a href="https://github.com/ninoloid"><img src="img/github.png" alt="Github" class="float-left"></a>
+            <h4>Github</h4>
+            <!-- <p>Lorem ipsum dolor sit amet.</p> -->
+          </div>
+          <div class="col-lg">
+            <a href="https://www.codecademy.com/profiles/ninoloid"><img src="img/codecademy.png" alt="Codecademy"
+                class="float-left"></a>
+            <h4>CCademy</h4>
+            <!-- <p>Lorem ipsum dolor sit amet.</p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of panel -->
+
+    <section class="artikel">
+      <div class="row justify-content-center">
+        <div class="col-12">
           <p>
-            <h3>Perkenalan</h3>
+            <h3>Secarik Kertas Kosong</h3>
           </p>
           <p>
-            Menjadi profesional di bidang IT selalu menjadi mimpi saya. Entah mengapa, sejak kecil saya selalu bermimpi
-            untuk bekerja di bidang IT. Saat anak-anak seusia saya memiliki cita-cita menjadi seorang Dokter atau Pilot,
-            impian saya justru berbeda, saya ingin bekerja di IBM meski saat itu tentu saja saya hanya tahu IBM dari
-            label yang menempel di komputer keluarga saya.
-          </p>
-          <p>
-            Saya mengenal komputer sejak usia 5 tahun. Saat itu yang saya ketahui tentang komputer hanya sebatas game,
-            untuk anak seusia itu wajar jika hanya tertarik pada hal-hal yang menyenangkan saja. Beranjak remaja, saya
-            mulai belajar mengotak-atik komputer. Merusak hardware? Tentu saya pernah. Dulu, saat processor masih
-            memiliki kaki-kaki, saya pernah secara tidak sengaja mematahkannya. Graphic Card pun pernah menjadi korban
-            rasa penasaran saya, demi mendongkrak kinerja Graphic Card, saya bermain-main dengan software overclock.
-            Saat itu saya menggunakan MSI Afterburner, alhasil Graphic Card saya rusak karena saya melakukannya tanpa
-            pengetahuan yang cukup. Merusak software? Tentu bukan sekali dua kali. Windows adalah software yang paling
-            sering menjadi korban keusilan saya. Beranjak dewasa, kegiatan tersebut tetap menjadi kebiasaan saya, hanya
-            saja sekarang saya lebih bijak dan mencari referensi terkait langkah yang benar.
-          </p>
-          <p>
-            Tahun 2010 setelah lulus dari SMA, saya masuk kuliah jurusan Akuntansi di Fakultas Ekonomi Universitas
-            Padjadjaran. Loh, kok Akuntansi? Jujur saja, saat itu saya tidak yakin akan perkembangan IT di Indonesia,
-            dan logika saya belum sampai pada pemikiran bahwa dunia IT begitu luas dan tidak dapat dibatasi oleh ruang
-            lingkup seluas "Negara". Tiga tahun berselang, saya memutuskan untuk mengambil langkah besar, meninggalkan
-            kuliah saya untuk mengambil kuliah di tempat lain, tentunya jurusan IT. Namun ternyata dunia kuliah di
-            bidang ini tidak seindah yang saya bayangkan. Saya merasa ilmu yang saya dapatkan sangatlah jauh dari cukup
-            jika hanya mengikuti kurikulum kampus saja. Saya harus bisa berbuat lebih, tapi bagaimana caranya? Saat
-            itulah saya mengenal Hacktiv8.
-          </p>
-          <br>
-          <p>
-            <h3>Langkah Awal</h3>
+            Sebagai Web Developer, saya bisa diibaratkan secarik kertas kosong yang dipenuhi tulisan-tulisan abstrak
+            dan tidak terstruktur. Mengapa? Karena selama ini saya hanya belajar dari internet saja, tanpa arahan.
+            Melalui Hacktiv8, saya mendapat bimbingan untuk "menulis" secara terstruktur.
           </p>
           <p>
             Senin, tanggal 14 Oktober 2019, saya memulai pendidikan saya di Hacktiv8. Sebelum pelajaran dimulai,
-            Hacktiv8 menjelaskan bahwa <b>Bootcamp berbeda dengan Workshop</b>, dimana kami sebagai siswa akan dituntut
-            untuk lebih aktif dan kreatif. Bukan hanya mengetikkan apa yang dicontohkan, tetapi harus berani mencoba dan
-            banyak membaca. "Bertemanlah dengan dokumentasi", kurang lebih itu yang bisa saya tangkap.
+            Hacktiv8 menjelaskan bahwa <b>Bootcamp berbeda dengan Workshop</b>, dimana kami sebagai siswa akan
+            dituntut untuk lebih aktif dan kreatif. Bukan hanya mengetikkan apa yang dicontohkan, tetapi harus
+            berani mencoba dan banyak membaca. "Bertemanlah dengan dokumentasi", kurang lebih itu yang bisa saya
+            tangkap.
           </p>
           <p>
-            Sebagian kecil waktu kami diisi oleh materi dari instruktur. Sebagian besarnya, kami dituntut untuk mampu
-            mengaplikasikan seluruh ilmu yang kami dapat dari materi tersebut, tentunya juga ditambah dengan
-            referensi-referensi yang telah disiapkan. Modul yang kami gunakan sudah lebih dari cukup dan telah disisipi
-            referensi-referensi yang telah diseleksi oleh tim instruktur. Kaget? Tidak juga. Manusia belajar dari
-            kesalahan. Dengan metode belajar seperti itu, kesalahan tidak dapat dihindari. Dari kesalahan tersebut, kita
-            dituntut untuk mencari solusi, dan dari solusi itulah ilmu itu datang. Jika hanya disuapi instruktur dan
-            mengetikkan apa yang dicontohkan, kesalahan dapat ditekan hingga mendekati 0%, lalu bagaimana kita akan
-            belajar?
+            Sebagian kecil waktu kami diisi oleh materi dari instruktur. Sebagian besarnya, kami dituntut untuk
+            mampu mengaplikasikan seluruh ilmu yang kami dapat dari materi tersebut, tentunya juga ditambah dengan
+            referensi-referensi yang telah disiapkan. Modul yang kami gunakan sudah lebih dari cukup dan telah
+            disisipi referensi-referensi yang telah diseleksi oleh tim instruktur. Kaget? Tidak juga. Manusia
+            belajar dari kesalahan. Dengan metode belajar seperti itu, kesalahan tidak dapat dihindari. Dari
+            kesalahan tersebut, kita dituntut untuk mencari solusi, dan dari solusi itulah ilmu itu datang. Jika
+            hanya disuapi instruktur dan mengetikkan apa yang dicontohkan, kesalahan dapat ditekan hingga mendekati
+            0%, lalu bagaimana kita akan belajar?
           </p>
-          <br>
+          <!-- <br> -->
           <p>
             <h3>Phase 0 Week 1</h3>
           </p>
@@ -89,49 +115,49 @@
             Github. Hari ini, Jumat, kombinasi dari ketiganya. "Loh kok cuma sehari belajar HTML dan CSS, memang
             cukup?", saya rasa tidak. "Lalu bagaimana?", ya perbanyak belajar mandiri. Lagipula, satu hari hanya
             merupakan waktu yang tercantum di jadwal saja, realitanya berbeda. Kapanpun kamu kesulitan, kamu
-            diperbolehkan konsultasi dengan instruktur. Kapanpun. Itu artinya, tidak ada batasan waktu dalam belajar.
-            Selama kamu masih merasa kurang, kamu bisa meminta lebih.
+            diperbolehkan konsultasi dengan instruktur. Kapanpun. Itu artinya, tidak ada batasan waktu dalam
+            belajar. Selama kamu masih merasa kurang, kamu bisa meminta lebih.
           </p>
-          <br>
+          <!-- <br> -->
           <p>
             <h3>Kesimpulan</h3>
           </p>
           <p>Belum banyak yang bisa saya ceritakan karena langkah kami sebagai students masih panjang. Kami baru memulai
             langkah kecil kami menuju dunia IT yang tiada batas. Begitu banyak cerita yang dapat disampaikan suatu saat
-            nanti, bukan sekarang. Ini belum waktunya, biarkan kami menikmati langkah demi langkah untuk mencapai
-            cita-cita mendapat kitab IT di Barat dengan bantuan Sun Microsystem. Krik krik krik. Terima kasih.</p>
-        </article>
-        <article>
-          <section>
-            <h3>GALLERY</h3>
-          </section>
-          <section class="gambar">
-            <div class="item">
-              <a href="https://raw.githubusercontent.com/ninoloid/ninoloid.github.io/master/img/Exercise1.JPG"
-                target="_blank">
-                <img src="img/Exercise1.JPG" alt="HTML on Codecademy" width="225px">
-              </a>
-            </div>
-            <div class="item">
-              <a href="https://raw.githubusercontent.com/ninoloid/ninoloid.github.io/master/img/Exercise2.JPG"
-                target="_blank">
-                <img src="img/Exercise2.JPG" alt="CSS on Codecademy" width="225px">
-              </a>
-            </div>
-            <div class="item">
-              <a href="https://raw.githubusercontent.com/ninoloid/ninoloid.github.io/master/img/Exercise2.JPG"
-                target="_blank">
-                <img src="img/Exercise2.JPG" alt="CSS on Codecademy" width="225px">
-              </a>
-            </div>
-          </section>
-        </article>
+            nanti, bukan sekarang. Ini belum waktunya, biarkan kami menikmati langkah demi langkah untuk menggapai
+            cita-cita. Terima kasih.</p>
+        </div>
       </div>
     </section>
-    <footer>
-      <h5>Copyright &copy; 2019 Ahmad Muhammad Satria Adiputra</h5>
-    </footer>
+
+    <!-- galeri -->
+    <div class="row galeri">
+      <div class="col-lg-6">
+        <img src="img/Exercise1.JPG" alt="Galeri" class="img-fluid">
+      </div>
+      <div class="col-lg-6">
+        <h3>Apa saja yang sudah dipelajari di Hacktiv8?</h3>
+        <p>Silahkan klik button di bawah untuk ke galeri.</p>
+        <a href="gallery.html" class="btn btn-primary tombol">Gallery</a>
+      </div>
+    </div>
+    <!-- end of galeri -->
   </div>
+
+  <!-- END OF CONTENT -->
+
+  <footer class="bg-dark text-white">
+    <div class="container">
+      <div class="row text-center pt-3">
+        <div class="col">
+          <p>
+            <b>&copy; 2019 - Ahmad Muhammad Satria Adiputra</b>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
 </body>
 
 </html>
