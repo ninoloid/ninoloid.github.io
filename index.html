@@ -1,162 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Viga&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/bootstrap-4.3.1.min.css">
-  <link rel="stylesheet" href="css/style.css" class="css">
-
-  <!-- JS -->
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/bootstrap.bundle-4.3.1.min.js"></script>
+  <title>W0 Jumat</title>
+  <link href="style.css" type="text/css" rel="stylesheet">
   <script src="js/fontawesome.js"></script>
-
-  <title>Ahmad's Personal Github Web - Home</title>
 </head>
 
 <body>
+  <header>
+    <nav>
+      <img src="img/hacktiv8.webp">
+      <ul>
+        <li><a href="#"><i class="fas fa-home"></i></a></li>
+        <li><a href="#"><i class="fas fa-images"></i></a></li>
+        <li><a href="#"><i class="fas fa-list-alt"></i></a></li>
+        <li><a href="#"><i class="fas fa-book-open"></i></a></li>
+      </ul>
+      <h3 onclick="myFunction()"><i class="fas fa-chevron-circle-down" style="font-size: 3rem; color: white;"></i></h3>
+    </nav>
+  </header>
 
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-    <a class="navbar-brand" href="#">Ahmad MSA</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav ml-auto">
-        <a class="nav-item nav-link" href="index.html">Home</a>
-        <a class="nav-item nav-link" href="gallery.html">Gallery</a>
-        <a class="nav-item btn btn-primary tombol" href="https://hacktiv8.com/fullstack/apply/" target="_blank">Join
-          Us</a>
-      </div>
-    </div>
-  </nav>
-  <!-- END OF NAVBAR -->
-
-
-  <!-- JUMBOTRON -->
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-4">
-        <!-- Every beginner possesses a<br><span>great potential</span> to be an <span>expert</span> -->
-        <blockquote>
-          "Every beginner possesses a great potential to be an expert." ― Lailah Gifty Akita
-        </blockquote>
-      </h1>
-    </div>
-  </div>
-  <!-- END OF JUMBOTRON -->
-
-
-  <!-- CONTENT -->
-  <div class="container">
-
-    <!-- panel -->
-    <div class="row justify-content-center">
-      <div class="col-6 panel">
-        <div class="row justify-content-center">
-          <div class="col-lg">
-            <a href="https://github.com/ninoloid"><img src="img/github.png" alt="Github" class="float-left"></a>
-            <h4>Github</h4>
-            <!-- <p>Lorem ipsum dolor sit amet.</p> -->
-          </div>
-          <div class="col-lg">
-            <a href="https://www.codecademy.com/profiles/ninoloid"><img src="img/codecademy.png" alt="Codecademy"
-                class="float-left"></a>
-            <h4>CCademy</h4>
-            <!-- <p>Lorem ipsum dolor sit amet.</p> -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end of panel -->
-
-    <section class="artikel">
-      <div class="row justify-content-center">
-        <div class="col-12">
-          <p>
-            <h3>Secarik Kertas Kosong</h3>
-          </p>
-          <p>
-            Sebagai Web Developer, saya bisa diibaratkan secarik kertas kosong yang dipenuhi tulisan-tulisan abstrak
-            dan tidak terstruktur. Mengapa? Karena selama ini saya hanya belajar dari internet saja, tanpa arahan.
-            Melalui Hacktiv8, saya mendapat bimbingan untuk "menulis" secara terstruktur.
-          </p>
-          <p>
-            Senin, tanggal 14 Oktober 2019, saya memulai pendidikan saya di Hacktiv8. Sebelum pelajaran dimulai,
-            Hacktiv8 menjelaskan bahwa <b>Bootcamp berbeda dengan Workshop</b>, dimana kami sebagai siswa akan
-            dituntut untuk lebih aktif dan kreatif. Bukan hanya mengetikkan apa yang dicontohkan, tetapi harus
-            berani mencoba dan banyak membaca. "Bertemanlah dengan dokumentasi", kurang lebih itu yang bisa saya
-            tangkap.
-          </p>
-          <p>
-            Sebagian kecil waktu kami diisi oleh materi dari instruktur. Sebagian besarnya, kami dituntut untuk
-            mampu mengaplikasikan seluruh ilmu yang kami dapat dari materi tersebut, tentunya juga ditambah dengan
-            referensi-referensi yang telah disiapkan. Modul yang kami gunakan sudah lebih dari cukup dan telah
-            disisipi referensi-referensi yang telah diseleksi oleh tim instruktur. Kaget? Tidak juga. Manusia
-            belajar dari kesalahan. Dengan metode belajar seperti itu, kesalahan tidak dapat dihindari. Dari
-            kesalahan tersebut, kita dituntut untuk mencari solusi, dan dari solusi itulah ilmu itu datang. Jika
-            hanya disuapi instruktur dan mengetikkan apa yang dicontohkan, kesalahan dapat ditekan hingga mendekati
-            0%, lalu bagaimana kita akan belajar?
-          </p>
-          <!-- <br> -->
-          <p>
-            <h3>Phase 0 Week 1</h3>
-          </p>
-          <p>Hari pertama, kami belajar HTML. Hari kedua, kami belajar CSS. Hari ketiga dan keempat, kami belajar
-            Github. Hari ini, Jumat, kombinasi dari ketiganya. "Loh kok cuma sehari belajar HTML dan CSS, memang
-            cukup?", saya rasa tidak. "Lalu bagaimana?", ya perbanyak belajar mandiri. Lagipula, satu hari hanya
-            merupakan waktu yang tercantum di jadwal saja, realitanya berbeda. Kapanpun kamu kesulitan, kamu
-            diperbolehkan konsultasi dengan instruktur. Kapanpun. Itu artinya, tidak ada batasan waktu dalam
-            belajar. Selama kamu masih merasa kurang, kamu bisa meminta lebih.
-          </p>
-          <!-- <br> -->
-          <p>
-            <h3>Kesimpulan</h3>
-          </p>
-          <p>Belum banyak yang bisa saya ceritakan karena langkah kami sebagai students masih panjang. Kami baru memulai
-            langkah kecil kami menuju dunia IT yang tiada batas. Begitu banyak cerita yang dapat disampaikan suatu saat
-            nanti, bukan sekarang. Ini belum waktunya, biarkan kami menikmati langkah demi langkah untuk menggapai
-            cita-cita. Terima kasih.</p>
-        </div>
-      </div>
+  <main>
+    <!-- <nav>
+      <ul>
+        <li><a href="#">WISHLIST</a></li>
+        <li><a href="#">BELANJA SAYA</a></li>
+        <li><a href="#">PENGATURAN</a></li>
+        <li><a href="#">COMPLAIN</a></li>
+        <li><a href="#">JUALAN</a></li>
+      </ul>
+    </nav> -->
+    <section>
+      <p>
+        KOSONG
+      </p>
+      <!-- <article>
+        <h1>Nama Produk 1</h1>
+        <p>Keterangan Produk 1</p>
+      </article>
+      <article>
+        <h1>Nama Produk 2</h1>
+        <p>Keterangan Produk 2</p>
+      </article>
+      <article>
+        <h1>Nama Produk 3</h1>
+        <p>Keterangan Produk 3</p>
+      </article>
+      <article>
+        <h1>Nama Produk 4</h1>
+        <p>Keterangan Produk 4</p>
+      </article> -->
     </section>
+    <aside id="show">
+      <ul>
+        <li><a href="https://github.com/ninoloid" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"
+              style="font-size: 3rem;"></i></a></li>
+        <li><a href="https://www.codecademy.com/profiles/ninoloid" target="_blank" rel="noopener noreferrer"><i
+              class="fas fa-code" style="font-size: 2.3rem;"></i></a></li>
+      </ul>
+    </aside>
+  </main>
 
-    <!-- galeri -->
-    <div class="row galeri">
-      <div class="col-lg-6">
-        <img src="img/Exercise1.JPG" alt="Galeri" class="img-fluid">
-      </div>
-      <div class="col-lg-6">
-        <h3>Apa saja yang sudah dipelajari di Hacktiv8?</h3>
-        <p>Silahkan klik button di bawah untuk ke galeri.</p>
-        <a href="gallery.html" class="btn btn-primary tombol">Gallery</a>
-      </div>
-    </div>
-    <!-- end of galeri -->
-  </div>
-
-  <!-- END OF CONTENT -->
-
-  <footer class="bg-dark text-white">
-    <div class="container">
-      <div class="row text-center pt-3">
-        <div class="col">
-          <p>
-            <b>&copy; 2019 - Ahmad Muhammad Satria Adiputra</b>
-          </p>
-        </div>
-      </div>
-    </div>
+  <footer>
+    <!-- <ul>
+      <li><a href="#">Link 1</a></li>
+      <li><a href="#">Link 2</a></li>
+      <li><a href="#">Link 3</a></li>
+      <li><a href="#">Link 4</a></li>
+    </ul> -->
+    <h4>Copyright &copy; 2019 - Ahmad Muhammad Satria Adiputra</h4>
   </footer>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("show");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  </script>
 
 </body>
 

@@ -1,0 +1,12 @@
+Display : - block
+          - flex
+          - inline-block
+          - inline
+
+Properti di tipe display flex :
+  justify-content : mengatur alignment secara horizontal (pengatuan space antar element)
+  align-items     : mengatur alignment secara vertical
+  
+Karena border memakan space, biasanya kalau dipasang di menu akan geser-geser.
+Biar ga geser-geser, jangan gunakan border, ganti aja jadi outline.
+Cara pakainya sama aja.
