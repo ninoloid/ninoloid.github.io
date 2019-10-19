@@ -30,6 +30,7 @@ header nav {
 header nav img {
   width: 70px;
   height: 70px;
+  margin-left: 1rem;
 }
 
 header nav ul {
@@ -46,6 +47,7 @@ header nav ul li a {
   margin: 0 -4px 0 0;
   background: rgba(220, 220, 220, 0.2);
   color: white;
+  font-size: 1.3rem;
 }
 
 header nav ul li a:hover {
