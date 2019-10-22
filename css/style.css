@@ -149,6 +149,7 @@ section #jurnal {
   border: 0;
   text-align: justify;
   padding: 15px;
+  flex-direction: column;
 }
 
 #jurnal h1 {

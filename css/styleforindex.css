@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Acme', sans-serif;
+  display: flex;
+  /* arah flex ke bawah */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url(../img/nikita-kachanovsky-OVbeSXRk_9E-unsplash.jpg);
+  background-size: cover;
+  color: whitesmoke;
+  /* bikin height setinggi layar */
+  height: 100vh;
+}
+
+footer {
+  position: absolute;
+  bottom: 1rem;
+  border-top: 2px dotted #FFFCFC;
+  border-bottom: 2px dotted #FFFCFC;
+}
+
+#time {
+  font-size: 8rem;
+}
+
+h1 {
+  padding-bottom: 3rem;
+  font-size: 3rem;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+  opacity: 0.6;
+}
+
+.homeBtn {
+  background: #FFFCFC;
+  background-image: -webkit-linear-gradient(top, #FFFCFC, #8A8A8A);
+  background-image: -moz-linear-gradient(top, #FFFCFC, #8A8A8A);
+  background-image: -ms-linear-gradient(top, #FFFCFC, #8A8A8A);
+  background-image: -o-linear-gradient(top, #FFFCFC, #8A8A8A);
+  background-image: linear-gradient(to bottom, #FFFCFC, #8A8A8A);
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  border-radius: 1.5rem;
+  color: #333;
+  font-family: Open Sans;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 1rem;
+  box-shadow: 1px 1px 20px 0px #000000;
+  -webkit-box-shadow: 1px 1px 20px 0px #000000;
+  -moz-box-shadow: 1px 1px 20px 0px #000000;
+  text-shadow: 1px 1px 20px #000000;
+  border: solid #337FED 1px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.homeBtn:hover {
+  background: #1E62D0;
+  color: #000000;
+  background-image: -webkit-linear-gradient(top, #1E62D0, #3D94F6);
+  background-image: -moz-linear-gradient(top, #1E62D0, #3D94F6);
+  background-image: -ms-linear-gradient(top, #1E62D0, #3D94F6);
+  background-image: -o-linear-gradient(top, #1E62D0, #3D94F6);
+  background-image: linear-gradient(to bottom, #1E62D0, #3D94F6);
+  text-decoration: none;
+}
+
+/* buat layar kecil */
+@media(max-width: 700px) {
+  #time {
+    font-size: 6rem;
+  }
+
+  footer {
+    border-top: 1px dotted #FFFCFC;
+    border-bottom: 1px dotted #FFFCFC;
+    font-size: 0.8rem;
+  }
+
+}
