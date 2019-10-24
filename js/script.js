@@ -26,7 +26,7 @@ function showJam() {
   jam = jam % 12 || 12;
 
   // output
-  time.innerHTML = `${jam}<span>:</span>${addNol(menit)}<span>:</span>${addNol(detik)}`;
+  time.innerHTML = `${jam}<span>:</span>${addNol(menit)}<span>:</span>${addNol(detik)} ${ampm}`;
 
   setTimeout(showJam, 1000);
 }
