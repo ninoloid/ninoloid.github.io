@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Memory Game</title>
+  <link rel="stylesheet" href="css/memorygame.css">
+</head>
+
+<body onload="shuffle()">
+  <header>
+    <h1 id="timer">Shuffling...</h1>
+  </header>
+  <div class="container" id="show">
+    <section class="memory-game" id="memory-game">
+      <div class="game-cards" data-image="spade">
+        <img src="img/cards/spade.png" alt="spade" class="front">
+        <img src="img/cards/squares.png" alt="backface" class="back">
+      </div>
+      <div class="game-cards" data-image="heart">
+        <img src="img/cards/heart.png" alt="heart" class="front">
+        <img src="img/cards/squares.png" alt="backface" class="back">
+      </div>
+      <div class="game-cards" data-image="diamond">
+        <img src="img/cards/diamond.png" alt="diamond" class="front">
+        <img src="img/cards/squares.png" alt="backface" class="back">
+      </div>
+      <div class="game-cards" data-image="club">
+        <img src="img/cards/club.png" alt="club" class="front">
+        <img src="img/cards/squares.png" alt="backface" class="back">
+      </div>
+      <div class="game-cards" data-image="cspade">
+        <img src="img/cards/circle_spade.png" alt="circle spade" class="front">
+        <img src="img/cards/squares.png" alt="backface" class="back">
+      </div>
+      <div class="game-cards" data-image="cheart">
+        <img src="img/cards/circle_heart.png" alt="circle heart" class="front">
+        <img src="img/cards/squares.png" alt="backface" class="back">
+      </div>
+      <div class="game-cards" data-image="cdiamond">
+        <img src="img/cards/circle_diamond.png" alt="circle diamond" class="front">
+        <img src="img/cards/squares.png" alt="backface" class="back">
+      </div>
+      <div class="game-cards" data-image="cclub">
+        <img src="img/cards/circle_club.png" alt="circle club" class="front">
+        <img src="img/cards/squares.png" alt="backface" class="back">
+      </div>
+      <div class="game-cards" data-image="gspade">
+        <img src="img/cards/gold_spade.png" alt="gold spade" class="front">
+        <img src="img/cards/squares.png" alt="backface" class="back">
+      </div>
+      <div class="game-cards" data-image="gheart">
+        <img src="img/cards/gold_heart.png" alt="gold heart" class="front">
+        <img src="img/cards/squares.png" alt="backface" class="back">
+      </div>
+      <div class="game-cards" data-image="gdiamond">
+        <img src="img/cards/gold_diamond.png" alt="gold diamond" class="front">
+        <img src="img/cards/squares.png" alt="backface" class="back">
+      </div>
+      <div class="game-cards" data-image="gclub">
+        <img src="img/cards/gold_club.png" alt="gold club" class="front">
+        <img src="img/cards/squares.png" alt="backface" class="back">
+      </div>
+      <div class="game-cards" data-image="spade">
+        <img src="img/cards/spade.png" alt="spade" class="front">
+        <img src="img/cards/squares.png" alt="backface" class="back">
+      </div>
+      <div class="game-cards" data-image="heart">
+        <img src="img/cards/heart.png" alt="heart" class="front">
+        <img src="img/cards/squares.png" alt="backface" class="back">
+      </div>
+      <div class="game-cards" data-image="diamond">
+        <img src="img/cards/diamond.png" alt="diamond" class="front">
+        <img src="img/cards/squares.png" alt="backface" class="back">
+      </div>
+      <div class="game-cards" data-image="club">
+        <img src="img/cards/club.png" alt="club" class="front">
+        <img src="img/cards/squares.png" alt="backface" class="back">
+      </div>
+      <div class="game-cards" data-image="cspade">
+        <img src="img/cards/circle_spade.png" alt="circle spade" class="front">
+        <img src="img/cards/squares.png" alt="backface" class="back">
+      </div>
+      <div class="game-cards" data-image="cheart">
+        <img src="img/cards/circle_heart.png" alt="circle heart" class="front">
+        <img src="img/cards/squares.png" alt="backface" class="back">
+      </div>
+      <div class="game-cards" data-image="cdiamond">
+        <img src="img/cards/circle_diamond.png" alt="circle diamond" class="front">
+        <img src="img/cards/squares.png" alt="backface" class="back">
+      </div>
+      <div class="game-cards" data-image="cclub">
+        <img src="img/cards/circle_club.png" alt="circle club" class="front">
+        <img src="img/cards/squares.png" alt="backface" class="back">
+      </div>
+      <div class="game-cards" data-image="gspade">
+        <img src="img/cards/gold_spade.png" alt="gold spade" class="front">
+        <img src="img/cards/squares.png" alt="backface" class="back">
+      </div>
+      <div class="game-cards" data-image="gheart">
+        <img src="img/cards/gold_heart.png" alt="gold heart" class="front">
+        <img src="img/cards/squares.png" alt="backface" class="back">
+      </div>
+      <div class="game-cards" data-image="gdiamond">
+        <img src="img/cards/gold_diamond.png" alt="gold diamond" class="front">
+        <img src="img/cards/squares.png" alt="backface" class="back">
+      </div>
+      <div class="game-cards" data-image="gclub">
+        <img src="img/cards/gold_club.png" alt="gold club" class="front">
+        <img src="img/cards/squares.png" alt="backface" class="back">
+      </div>
+    </section>
+  </div>
+
+  <!-- <div class="level" id="btnLevel"> -->
+  <ul class="level" id="btnLevel">
+    <li class="homeBtn" id="show" onclick="startGame(10)">Easy</li>
+    <li class="homeBtn" id="show" onclick="startGame(7)">Normal</li>
+    <li class="homeBtn" id="show" onclick="startGame(3)">Hard</li>
+  </ul>
+  <!-- </div> -->
+
+  <script src="js/timer.js"></script>
+  <script src="js/mgShuffle.js"></script>
+  <script src="js/memorygame.js"></script>
+</body>
+
+</html>
