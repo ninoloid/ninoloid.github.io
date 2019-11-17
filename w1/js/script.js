@@ -39,12 +39,10 @@ const setGreeting = () => {
   let today = new Date(),
     jam = today.getHours();
 
-  if (jam < 11) {
+  if (jam < 12) {
     greeting.innerHTML = 'Selamat Pagi';
-  } else if (jam < 15) {
-    greeting.innerHTML = 'Selamat Siang';
   } else if (jam < 18) {
-    greeting.innerHTML = 'Selamat Sore';
+    greeting.innerHTML = 'Selamat Siang';
   } else {
     greeting.innerHTML = 'Selamat Malam';
   }
