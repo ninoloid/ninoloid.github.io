@@ -1,6 +1,9 @@
 function shuffle() {
   let memoryGame = document.getElementById("memory-game");
-  var elementsArray = Array.prototype.slice.call(memoryGame.getElementsByClassName('game-cards'));
+  var elementsArray = Array.from(memoryGame.getElementsByClassName('game-cards'));
+  // sama dengan
+  // var elementsArray = Array.prototype.slice.call(memoryGame.getElementsByClassName('game-cards'));
+
   elementsArray.forEach(function (element) {
     memoryGame.removeChild(element);
   })

@@ -41,6 +41,18 @@ header h1 {
   background: rgba(0, 0, 100, 0.5);
 }
 
+#score {
+  /* width: 10vh; */
+  height: 3rem;
+  border: none;
+  color: white;
+  line-height: 3rem;
+  text-align: center;
+  position: absolute;
+  left: 2rem;
+  text-decoration: none;
+}
+
 .container {
   display: none;
 }
@@ -73,6 +85,10 @@ header h1 {
 
 .game-cards.flip {
   transform: rotateY(180deg);
+}
+
+.solved {
+  visibility: hidden;
 }
 
 .front,

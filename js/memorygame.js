@@ -7,8 +7,10 @@ let cardIsFlipped = false,
 
 function flipCard() {
   if (locked) return;
-  // untuk mencegah isMatch = true saat 1 kartu di klik 2 kali karena dataset imagenya dianggap sama
+  // untuk mencegah isMatch === true saat 1 kartu di klik 2 kali karena dataset imagenya dianggap sama
   if (this === first) return;
+  // console.log(this)
+  // global object this merujuk ke kartu yg di klik
 
 
   this.classList.toggle('flip')
@@ -40,9 +42,20 @@ const isMatch = () => {
 }
 
 const disableClick = () => {
+  const score = document.getElementById('score');
+  counter <= 10 ? score.innerHTML = 12 - counter + ' couples left' :
+    score.innerHTML = 'a couple left'
+
   first.removeEventListener('click', flipCard);
   second.removeEventListener('click', flipCard);
-  console.log(counter)
+  // console.log(counter)
+  locked = true;
+  setTimeout(() => {
+    first.classList.toggle('solved');
+    second.classList.toggle('solved');
+    locked = false;
+  }, 1000)
+
   if (counter === 12) {
     setTimeout(() => {
       congrats();
@@ -59,11 +72,29 @@ const reRotateCard = () => {
   }, 1000)
 }
 
-cards.forEach(card => card.addEventListener('click', flipCard))
 
 const startGame = (menit) => {
-  var timer = Number(menit) * 60,
-    display = document.querySelector('#timer');
+  let timer = Number(menit) * 60,
+    display = document.getElementById('timer');
+  // atau bisa juga pake Query Selector untuk ngambil element dgn id 'timer' pertama 
+  // display = document.querySelector('#timer');
+
+  display.innerHTML = '00:10';
+  cards.forEach(card => card.classList.toggle('flip'));
+  // sama dengan
+  // for (let i = 0; i < cards.length; i++) {
+  //   cards[i].classList.toggle('sembunyikan');
+  // }
+
+  setTimeout(() => {
+    // console.log(cards);
+    cards.forEach(card => {
+      card.classList.toggle('flip');
+      card.addEventListener('click', flipCard);
+    });
+    // console.log(cards);
+  }, 12250)
+
   startTimer(timer, display);
 };
 
@@ -88,6 +119,7 @@ const congrats = () => {
     location.reload();
   } else window.open("index.html", "_self")
 }
+
 
 /*
 STRUKTUR JAVASCRIPT
