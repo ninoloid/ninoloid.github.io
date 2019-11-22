@@ -4,10 +4,7 @@ const startTimer = (duration, display) => {
     isPlaying = false,
     minutes, seconds;
 
-  if (confirm("Mulai permainan?")) {
-    showHide();
-    counting = true;
-  } else window.open("index.html", "_self")
+  confirm("Mulai permainan?") ? (showHide(), counting = true) : window.open("index.html", "_self");
 
   if (counting === true) {
     setInterval(function () {

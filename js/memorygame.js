@@ -83,14 +83,8 @@ const startGame = (menit) => {
   //   cards[i].classList.toggle('flip');
   // }
 
-  setTimeout(() => {
-    // console.log(cards);
-    cards.forEach(card => {
-      // card.classList.remove('flip'); dipindahin ke timer.js
-      card.addEventListener('click', flipCard);
-    });
-    // console.log(cards);
-  }, 11250)
+  setTimeout(() => cards.forEach(card => card.addEventListener('click', flipCard)), 11250);
+  // card.classList.remove('flip') awalnya di dalam timeout, sekarang udah dipindahin ke timer.js biar countdownnya pas
 
   startTimer(timer, display);
 };
@@ -113,8 +107,4 @@ const removeElement = () => {
   howTo.parentNode.removeChild(howTo);
 }
 
-const congrats = () => {
-  if (confirm(`Selamat, kamu memenangkan permainan!\nMulai permainan baru?`)) {
-    location.reload();
-  } else window.open("index.html", "_self")
-}
+const congrats = () => confirm(`Selamat, kamu memenangkan permainan!\nMulai permainan baru?`) ? location.reload() : window.open("index.html", "_self");

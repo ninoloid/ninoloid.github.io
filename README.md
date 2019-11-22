@@ -114,11 +114,7 @@ const startGame = (menit) => {
   cards.forEach(card => card.classList.toggle('flip'));
 
 // menambahkan click event handler pada setiap element kartu namun dengan delay 11,25 detik, supaya saat preview kartunya tidak bisa di klik
-  setTimeout(() => {
-    cards.forEach(card => {
-      card.addEventListener('click', flipCard);
-    });
-  }, 11250)
+  setTimeout(() => cards.forEach(card => card.addEventListener('click', flipCard)), 11250);
 
   startTimer(timer, display);
 };
@@ -142,7 +138,7 @@ const showHide = () => {
 **Fungsi removeElement()** akan menghapus tombol dari element html setelah permainan dimulai.
 ```javascript
 const removeElement = () => {
-  // hapus element tombol dari document
+  // hapus element tombol dan howto dari document
   let buttonLevel = document.getElementById("btnLevel"),
     howTo = document.getElementById("howto");
   buttonLevel.parentNode.removeChild(buttonLevel);
@@ -150,14 +146,10 @@ const removeElement = () => {
 }
 ```
 
-**Fungsi congrats()** menampilkan pilihan aoakah akan mengulang permainan atau tidak, setelah permainan berhasil diselesaikan.
+**Fungsi congrats()** menampilkan pilihan apakah akan mengulang permainan atau tidak, setelah permainan berhasil diselesaikan.
 ```javascript
-const congrats = () => {
-  if (confirm(`Selamat, kamu memenangkan permainan!\nMulai permainan baru?`)) {
-    // reload halaman permainan, atau buka index.html di tab yg sama
-    location.reload();
-  } else window.open("index.html", "_self")
-}
+const congrats = () => confirm(`Selamat, kamu memenangkan permainan!\nMulai permainan baru?`) ? location.reload() : window.open("index.html", "_self");
+// reload halaman permainan, atau buka index.html di tab yg sama
 ```
 ---
 
@@ -170,12 +162,8 @@ const startTimer = (duration, display) => {
     isPlaying = false,
     minutes, seconds;
 
-  if (confirm("Mulai permainan?")) {
-    // jika ya, jalankan fungsi showHide() untuk menampilkan kartu-kartu permainan, assign true ke counting agar timer berjalan.
-    showHide();
-    counting = true;
-    // jika tidak, buka index.html di tab yg sama.
-  } else window.open("index.html", "_self")
+  // jika ya, jalankan fungsi showHide() untuk menampilkan kartu-kartu permainan, assign true ke counting agar timer berjalan. jika tidak, buka index.html di tab yg sama.
+  confirm("Mulai permainan?") ? (showHide(), counting = true) : window.open("index.html", "_self");
 
   if (counting === true) {
     setInterval(function () {
