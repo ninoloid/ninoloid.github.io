@@ -128,7 +128,7 @@ const startGame = (menit) => {
 ```javascript
 const showHide = () => {
   // element ber-id show adalah area permainan utama, yaitu kumpulan kartu. pada posisi awal area permainan, semua kartu tidak ditampilkan. fungsi ini akan dipanggil oleh fungsi startTimer() saat permainan dimulai, sehingga semua kartu akan tampil.
-  var x = document.getElementById("show");
+  let x = document.getElementById("show");
   if (x.style.display === "flex") {
     x.style.display = "none";
   } else {
@@ -143,8 +143,10 @@ const showHide = () => {
 ```javascript
 const removeElement = () => {
   // hapus element tombol dari document
-  var element = document.getElementById("btnLevel");
-  element.parentNode.removeChild(element);
+  let buttonLevel = document.getElementById("btnLevel"),
+    howTo = document.getElementById("howto");
+  buttonLevel.parentNode.removeChild(buttonLevel);
+  howTo.parentNode.removeChild(howTo);
 }
 ```
 
@@ -170,7 +172,7 @@ const startTimer = (duration, display) => {
 
   if (confirm("Mulai permainan?")) {
     // jika ya, jalankan fungsi showHide() untuk menampilkan kartu-kartu permainan, assign true ke counting agar timer berjalan.
-    showHide()
+    showHide();
     counting = true;
     // jika tidak, buka index.html di tab yg sama.
   } else window.open("index.html", "_self")
@@ -191,11 +193,7 @@ const startTimer = (duration, display) => {
         timer = duration;
         isPlaying = true;
         // sebelum permainan, akan ditampilkan preview kartu di layar selama 10 detik (9 detik + 1 detik delay). setelah 10 detik tsb habis, countdown akan dimulai sesuai dengan parameter duration yang di pass dari memorygame.html melalui memorygame.js
-        setTimeout(() => {
-          cards.forEach(card => {
-            card.classList.remove('flip');
-          });
-        }, 1000)
+        setTimeout(() => cards.forEach(card => card.classList.remove('flip')), 1000);
       }
 
       if (minutes == 0 && seconds == 0 && isPlaying) {
@@ -218,26 +216,23 @@ const startTimer = (duration, display) => {
 const shuffle = () => {
   // assign elementsArray dengan semua class "game-cards" yg terdapat pada section ber-id "memory-game".
   let memoryGame = document.getElementById("memory-game");
-  var elementsArray = Array.from(memoryGame.getElementsByClassName('game-cards'));
+  let elementsArray = Array.from(memoryGame.getElementsByClassName('game-cards'));
 
-  elementsArray.forEach(function (element) {
     // hapus child element kartu dari memorygame.
-    memoryGame.removeChild(element);
-  })
+  elementsArray.forEach(element => memoryGame.removeChild(element));
   // panggil fungsi shuffleArray untuk mengacak array dari element kartu.
   shuffleArray(elementsArray);
-  elementsArray.forEach(function (element) {
-    // tambahkan kembali semua child element kartu yg telah diacak ke "memoryGame"
-    memoryGame.appendChild(element);
-  })
+  // tambahkan kembali semua child element kartu yg telah diacak ke "memoryGame"
+  elementsArray.forEach(element => memoryGame.appendChild(element))
 }
 ```
 
 **Function shuffleArray()** akan mengacak urutan array secara random dengan bantuan built-in function Math.random
 ```javascript
 const shuffleArray = array => {
-  for (var i = array.length - 1; i > 0; i--) {
-    var j = Math.floor(Math.random() * (i + 1));
+  for (let i = array.length - 1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i + 1));
+    // swap value
     [array[i], array[j]] = [array[j], array[i]]
   }
   return array;

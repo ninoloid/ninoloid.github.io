@@ -57,11 +57,7 @@ const disableClick = () => {
     locked = false;
   }, 1000)
 
-  if (counter === 12) {
-    setTimeout(() => {
-      congrats();
-    }, 500)
-  }
+  if (counter === 12) setTimeout(() => congrats(), 500);
 }
 
 const reRotateCard = () => {
@@ -100,7 +96,7 @@ const startGame = (menit) => {
 };
 
 const showHide = () => {
-  var x = document.getElementById("show");
+  let x = document.getElementById("show");
   if (x.style.display === "flex") {
     x.style.display = "none";
   } else {
@@ -110,9 +106,11 @@ const showHide = () => {
 }
 
 const removeElement = () => {
-  // hapus element dari document
-  var element = document.getElementById("btnLevel");
-  element.parentNode.removeChild(element);
+  // hapus element tombol dan howto dari document
+  let buttonLevel = document.getElementById("btnLevel"),
+    howTo = document.getElementById("howto");
+  buttonLevel.parentNode.removeChild(buttonLevel);
+  howTo.parentNode.removeChild(howTo);
 }
 
 const congrats = () => {

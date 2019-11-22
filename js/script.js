@@ -1,6 +1,6 @@
 // tombol kanan atas
 function myFunction() {
-  var x = document.getElementById("show");
+  let x = document.getElementById("show");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
