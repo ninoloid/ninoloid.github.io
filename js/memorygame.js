@@ -7,7 +7,7 @@ let cardIsFlipped = false,
 
 function flipCard() {
   if (locked) return;
-  // untuk mencegah isMatch === true saat 1 kartu di klik 2 kali karena dataset imagenya dianggap sama
+  // untuk mencegah isMatch true saat 1 kartu di klik 2 kali karena dataset imagenya dianggap sama
   if (this === first) return;
   // console.log(this)
   // global object this merujuk ke kartu yg di klik
@@ -83,17 +83,17 @@ const startGame = (menit) => {
   cards.forEach(card => card.classList.toggle('flip'));
   // sama dengan
   // for (let i = 0; i < cards.length; i++) {
-  //   cards[i].classList.toggle('sembunyikan');
+  //   cards[i].classList.toggle('flip');
   // }
 
   setTimeout(() => {
     // console.log(cards);
     cards.forEach(card => {
-      card.classList.toggle('flip');
+      // card.classList.remove('flip'); dipindahin ke timer.js
       card.addEventListener('click', flipCard);
     });
     // console.log(cards);
-  }, 12250)
+  }, 11250)
 
   startTimer(timer, display);
 };

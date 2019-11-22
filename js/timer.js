@@ -27,6 +27,11 @@ function startTimer(duration, display) {
       if (timer <= 0 && !isPlaying) {
         timer = duration;
         isPlaying = true;
+        setTimeout(() => {
+          cards.forEach(card => {
+            card.classList.remove('flip');
+          });
+        }, 1000)
       }
 
       if (minutes == 0 && seconds == 0 && isPlaying) {

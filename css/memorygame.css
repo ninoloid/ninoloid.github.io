@@ -167,4 +167,12 @@ header h1 {
   .button {
     font-size: 2rem;
   }
+
+  #score {
+    font-size: 1.2rem;
+  }
+
+  #timer {
+    font-size: 1.6rem;
+  }
 }
