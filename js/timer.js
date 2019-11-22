@@ -1,11 +1,11 @@
-function startTimer(duration, display) {
+const startTimer = (duration, display) => {
   let timer = 9,
     counting = false,
     isPlaying = false,
     minutes, seconds;
 
   if (confirm("Mulai permainan?")) {
-    myFunction()
+    showHide()
     counting = true;
   } else window.open("index.html", "_self")
 

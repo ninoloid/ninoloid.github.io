@@ -1,4 +1,4 @@
-function shuffle() {
+const shuffle = () => {
   let memoryGame = document.getElementById("memory-game");
   var elementsArray = Array.from(memoryGame.getElementsByClassName('game-cards'));
   // sama dengan
@@ -13,12 +13,10 @@ function shuffle() {
   })
 }
 
-function shuffleArray(array) {
+const shuffleArray = array => {
   for (var i = array.length - 1; i > 0; i--) {
     var j = Math.floor(Math.random() * (i + 1));
-    var temp = array[i];
-    array[i] = array[j];
-    array[j] = temp;
+    [array[i], array[j]] = [array[j], array[i]]
   }
   return array;
 }

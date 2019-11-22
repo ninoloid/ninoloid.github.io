@@ -99,7 +99,7 @@ const startGame = (menit) => {
   startTimer(timer, display);
 };
 
-const myFunction = () => {
+const showHide = () => {
   var x = document.getElementById("show");
   if (x.style.display === "flex") {
     x.style.display = "none";
@@ -120,9 +120,3 @@ const congrats = () => {
     location.reload();
   } else window.open("index.html", "_self")
 }
-
-
-/*
-STRUKTUR JAVASCRIPT
-
-*/
