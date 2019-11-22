@@ -8,7 +8,7 @@ let cardIsFlipped = false,
 function flipCard() {
   if (locked) return;
   // untuk mencegah isMatch true saat 1 kartu di klik 2 kali karena dataset imagenya dianggap sama
-  if (this === first) return;
+  // if (this === first) return; dipindahin ke bawah saat kartu kedua di klik
   // console.log(this)
   // global object this merujuk ke kartu yg di klik
 
@@ -22,6 +22,7 @@ function flipCard() {
 
     // klik kartu kedua
   } else {
+    if (this === first) return;
     cardIsFlipped = false;
     second = this;
     isMatch();
